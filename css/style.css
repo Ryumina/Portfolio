@@ -83,7 +83,8 @@ animation-delay: 0.3s;}
 
 /*main*/
 #wrap{width:100vw;
-height:100vh;}
+height:100vh;
+position:relative;}
 
 #header_wrap{width:100%;
 height:65px;
@@ -141,7 +142,7 @@ cursor: pointer;}
     content: "";
     height: 4px;
     width: 30px;
-    box-shadow: 0 -10px 0 0 #000;
+    box-shadow: 0 -9px 0 0 #000;
     position: absolute;
     top: 0;
     left: 0;
@@ -150,7 +151,7 @@ cursor: pointer;}
     content: "";
     height: 4px;
     width: 30px;
-    box-shadow: 0 10px 0 0 #000;
+    box-shadow: 0 9px 0 0 #000;
     position: absolute;
     top: 0;
     left: 0;
@@ -175,8 +176,38 @@ cursor: pointer;}
     transform: translateY(6px) rotate(-45deg); }
   .active .type16:after {
     left: 6px;
-    transform: translateY(-8px) rotate(45deg); }
+    transform: translateY(-7px) rotate(45deg); }
 /*nav_bar_end*/
+
+/*nav*/
+#nav_wrap{width:5%;
+height:85vh;
+position:absolute;
+bottom:-100vh;
+right:1%;
+z-index:5;}
+
+nav{width:100%;
+height:85vh;
+font-size:0.8rem;
+font-weight:700;
+text-align:center;}
+
+nav li{margin-top:40%;
+position:relative;
+top:0;
+left:0;
+box-shadow:0px 0px 0px 0px #fff;
+transition-duration:0.3s;}
+
+nav li:hover{top:-5px;
+left:-5px;
+box-shadow:3px 3px 5px 1px #b6b6b6;}
+
+.first{margin-top:0;}
+
+nav p{margin-top:5%;}
+/*nav_end*/
 
 #main_wrap{width:100%;
 height:100vh;}
@@ -195,11 +226,11 @@ clear:both;}
 height:250px;
 margin:0 auto;
 position:relative;
-top:11%;
+top:-50%;
 border-radius:100%;
 background-image: linear-gradient(90deg, #fff 50%, #f8d2ce 50%);
 background-size: 250% 200%;
-background-position: 100%;
+background-position: 90%;
 transition-duration:1s;}
 
 .about_wrap:hover{background-size: 150% 200%;
@@ -230,7 +261,7 @@ text-align:center;
 background-image: linear-gradient(150deg, #333 50%, #f8d2ce 50%);
 background-size: 350% 200%;
 background-position: 100%;
-transition-duration:1s;}
+transition-duration:1.5s;}
 
 .about:hover .about_text{background-position: 0%;}
 /*about_end*/
@@ -252,7 +283,7 @@ background:#d2e3fc;}
 height:300px;
 position:relative;
 top:50%;
-left:8%;
+left:-25%;
 transform:translate(0,-85%);
 border-radius:100%;
 cursor:pointer;}
@@ -287,7 +318,7 @@ text-align:center;
 background-image: linear-gradient(150deg, #333 50%, #fff 50%);
 background-size: 350% 200%;
 background-position: 100%;
-transition-duration:1s;}
+transition-duration:1.5s;}
 
 .portfolio_wrap:hover .portfolio_text{background-position: 0%;}
 /*portfolio_end*/
@@ -298,7 +329,7 @@ font-size:4rem;
 font-weight:500;
 margin:0 auto;
 position:relative;
-top:-25%;}
+top:-20%;}
 
 .my_portfolio{text-align:right;}
 /*intro_text_end*/
@@ -309,10 +340,9 @@ height:300px;
 float:right;
 position:relative;
 top:-60%;
-right:8%;
+right:-25%;
 border-radius:100%;
-cursor:pointer;
-background:#fff;}
+cursor:pointer;}
 
 .contact{width:300px;
 height:300px;

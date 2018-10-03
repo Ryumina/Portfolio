@@ -11,9 +11,38 @@ setTimeout(function() {
 		$('.content').css({"left":"100vw"});
 	},3000);
 
+setTimeout(function() {
+		$('.about_wrap').animate({"top":"11%"},1000,"easeInOutQuint");
+	},4000);
+setTimeout(function() {
+		$('.portfolio_wrap').animate({"left":"8%"},2000,"easeInOutQuint");
+	},5000);
+setTimeout(function() {
+		$('.contact_wrap').animate({"right":"8%"},2000,"easeInOutQuint");
+	},5500);
+
 //nav bar
 $(document).ready(function () {
     $(document).on('click', '.block', function () {
         $(this).toggleClass('active')
     })
 });
+
+//nav
+$(function(){
+	var a=0;
+
+	$(".block").click(function(){
+		a++;
+		a=a%2;
+
+		if(a==1){
+			$("#nav_wrap").animate().stop();
+			$("#nav_wrap").animate({"bottom":"0"},2000,"easeOutBounce");
+		}else{
+			$("#nav_wrap").animate().stop();
+			$("#nav_wrap").animate({"bottom":"-100vh"},1500,"easeInOutQuint");
+		}
+	});
+});
+

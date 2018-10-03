@@ -1,0 +1,219 @@
+
+*{margin:0; padding:0;}
+html{font-size:13px;}
+body {color:#333; font-family: 'Montserrat'; overflow:hidden;}
+ol,ul{ list-style:none;}
+a {outline:0; text-decoration:none; color:#333;}
+img {border:0; vertical-align:top;}
+
+
+/*about_page*/
+#wrap{width:100vw;
+height:100vh;}
+
+#header_wrap{width:100%;
+height:65px;
+position:fixed;
+z-index:10;}
+
+header{width:95%;
+height:65px;
+margin:0 auto;}
+
+header::after{content:" ";
+display:block;
+clear:both;}
+
+#logo {float:left;
+position:relative;
+top:50%;
+left:0;
+transform:translate(0,-50%);}
+
+#logo a{color:#333;
+font-size:1.8rem;
+font-weight:700;
+transition-duration:0.7s;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-image: linear-gradient(to right, #FFDE1D 50%, #333 50%);
+background-size: 200% 100%;
+background-position: 100%;}
+
+#logo a:hover{background-position: 0%;}
+
+/*nav_bar*/
+.block {
+  height: 28px;
+  width: 30px;
+  float:right;
+  position:relative;
+  top:18.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+cursor: pointer;}
+
+.toggle-btn {
+  height: 4px;
+  width: 30px;
+  background-color: #000;
+  position: relative;
+  top: 50%;
+  left: 0;
+  margin: auto;
+  transition: all 0.3s ease-in-out; }
+  .toggle-btn:before {
+    content: "";
+    height: 4px;
+    width: 30px;
+    box-shadow: 0 -9px 0 0 #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out; }
+  .toggle-btn:after {
+    content: "";
+    height: 4px;
+    width: 30px;
+    box-shadow: 0 9px 0 0 #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out; }
+
+
+.active .toggle-btn {
+  background-color: transparent;
+  transition: all 0.2s ease-in-out; }
+  .active .toggle-btn:before {
+    top: 0;
+    transition: all 0.3s ease-in-out; }
+  .active .toggle-btn:after {
+    top: 0;
+    transition: all 0.3s ease-in-out; }
+
+.active .type16 {
+  transform: rotate(360deg);
+  transition: all 0.6s ease-in-out; }
+  .active .type16:before {
+    left: 6px;
+    transform: translateY(6px) rotate(-45deg); }
+  .active .type16:after {
+    left: 6px;
+    transform: translateY(-7px) rotate(45deg); }
+/*nav_bar_end*/
+
+/*nav*/
+#nav_wrap{width:5%;
+height:85vh;
+position:absolute;
+bottom:-100vh;
+right:1%;
+z-index:5;}
+
+nav{width:100%;
+height:85vh;
+font-size:0.8rem;
+font-weight:700;
+text-align:center;}
+
+nav li{margin-top:40%;
+position:relative;
+top:0;
+left:0;
+box-shadow:0px 0px 0px 0px #fff;
+transition-duration:0.3s;}
+
+nav li:hover{top:-5px;
+left:-5px;
+box-shadow:3px 3px 5px 1px #b6b6b6;}
+
+.first{margin-top:0;}
+
+nav p{margin-top:5%;}
+/*nav_end*/
+
+/*section*/
+#about_page_wrap{width:100vw;
+height:100vh;
+position:relative;
+top:-100vh;}
+
+#about_page{width:70%;
+height:100vh;
+padding:5% 0;
+margin:0 auto;}
+
+.title_wrap{width:100%;
+height:15%;
+text-align:center;}
+
+.s_title{width:100%;
+color:#999;
+font-family: 'Noto Sans KR', sans-serif;
+font-size:1rem;
+font-weight:300;}
+
+.b_title{width:100%;
+font-size:3rem;
+font-weight:800;
+padding:1% 0;}
+
+.about_content{width:100%;
+height:60%;
+padding:1% 0;}
+
+.about_content::after{content:" ";
+display:block;
+clear:both;}
+
+.about_content li{width:28%;
+height:55vh;
+float:left;
+position:relative;
+top:0;
+margin-left:8%;
+border-radius:3%;
+box-shadow:3px 5px 12px 3px #fff;
+transition-duration:0.5s;}
+
+.about_content li:hover{top:-15px;
+box-shadow:3px 5px 12px 3px #b6b6b6;}
+
+.about_content li:first-child{margin-left:0;
+background-color:#f8d2ce;}
+.about_content li:nth-child(2){background-color:#d2e3fc;}
+.about_content li:last-child{background-color:#ffefc3;}
+
+.about_me{background:url("../img/about_me.png")no-repeat center center;
+background-size:70%;}
+.about_me:hover{background:url("../img/about_me_gif.gif")no-repeat center center;
+background-size:70%;}
+
+.about_birth{background:url("../img/about_birth.png")no-repeat center center;
+background-size:70%;}
+.about_birth:hover{background:url("../img/about_birth_gif.gif")no-repeat center center;
+background-size:70%;}
+
+.about_house{background:url("../img/about_house.png")no-repeat center center;
+background-size:80%;}
+.about_house:hover{background:url("../img/about_house_gif.gif")no-repeat center center;
+background-size:80%;}
+
+.about_content_text{font-family: 'Noto Sans KR', sans-serif;
+font-size:1.2rem;
+font-weight:500;
+text-align:center;
+position:relative;
+bottom:-108%;}
+/*section_end*/
+
+
+
+
+
+
+
+
+/*about_page_end*/
