@@ -1,0 +1,199 @@
+
+*{margin:0; padding:0;}
+html{font-size:13px;}
+body {color:#333; font-family: 'Montserrat'; overflow:hidden;}
+ol,ul{ list-style:none;}
+a {outline:0; text-decoration:none; color:#333;}
+img {border:0; vertical-align:top;}
+
+
+/*portfolio_page*/
+
+#wrap{width:100vw;
+height:100vh;}
+
+#header_wrap{width:100%;
+height:65px;
+position:fixed;
+z-index:10;}
+
+header{width:95%;
+height:65px;
+margin:0 auto;}
+
+header::after{content:" ";
+display:block;
+clear:both;}
+
+#logo {float:left;
+position:relative;
+top:50%;
+left:0;
+transform:translate(0,-50%);}
+
+#logo a{color:#333;
+font-size:1.8rem;
+font-weight:700;
+transition-duration:0.7s;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-image: linear-gradient(to right, #fff 50%, #333 50%);
+background-size: 200% 100%;
+background-position: 100%;}
+
+#logo a:hover{background-position: 0%;}
+
+/*nav_bar*/
+.block {
+  height: 28px;
+  width: 30px;
+  float:right;
+  position:relative;
+  top:18.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+cursor: pointer;}
+
+.toggle-btn {
+  height: 4px;
+  width: 30px;
+  background-color: #000;
+  position: relative;
+  top: 50%;
+  left: 0;
+  margin: auto;
+  transition: all 0.3s ease-in-out; }
+  .toggle-btn:before {
+    content: "";
+    height: 4px;
+    width: 30px;
+    box-shadow: 0 -9px 0 0 #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out; }
+  .toggle-btn:after {
+    content: "";
+    height: 4px;
+    width: 30px;
+    box-shadow: 0 9px 0 0 #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out; }
+
+
+.active .toggle-btn {
+  background-color: transparent;
+  transition: all 0.2s ease-in-out; }
+  .active .toggle-btn:before {
+    top: 0;
+    transition: all 0.3s ease-in-out; }
+  .active .toggle-btn:after {
+    top: 0;
+    transition: all 0.3s ease-in-out; }
+
+.active .type16 {
+  transform: rotate(360deg);
+  transition: all 0.6s ease-in-out; }
+  .active .type16:before {
+    left: 6px;
+    transform: translateY(6px) rotate(-45deg); }
+  .active .type16:after {
+    left: 6px;
+    transform: translateY(-7px) rotate(45deg); }
+/*nav_bar_end*/
+
+/*nav*/
+#nav_wrap{width:5%;
+height:85vh;
+position:absolute;
+bottom:-100vh;
+right:1%;
+z-index:5;}
+
+nav{width:100%;
+height:85vh;
+font-size:0.8rem;
+font-weight:700;
+text-align:center;}
+
+nav li{margin-top:40%;
+position:relative;
+top:0;
+left:0;
+box-shadow:0px 0px 0px 0px #fff;
+transition-duration:0.3s;}
+
+nav li:hover{top:-5px;
+left:-5px;
+box-shadow:3px 3px 5px 1px #b69e15;}
+
+.first{margin-top:0;}
+
+nav p{margin-top:5%;}
+/*nav_end*/
+
+/*section*/
+#portfolio_one_wrap{width:100vw;
+height:100vh;
+position:relative;
+bottom:-100vh;
+background:#ffde1d;}
+
+#portfolio_one{width:70%;
+height:80%;
+position:relative;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);}
+
+#portfolio_one::after{content:" ";
+display:block;
+clear:both;}
+
+.portfolio_one_image_wrap{width:35%;
+height:100%;
+display:inline-block;
+float:left;
+border-radius:10px 10px;}
+
+.portfolio_one_image {width:100%;
+height:100%;
+position:relative;
+top:0;
+left:0;
+border-radius:10px 10px;
+box-shadow:0px 0px 0px 0px #fff;
+transition-duration:0.5s;
+background:url("../img/portfolio_one_img_white.png")no-repeat center center;
+background-size:cover;}
+
+.portfolio_one_image:hover{top:-7px;
+left:-7px;
+box-shadow:7px 7px 15px 3px #b69e15;
+background:url("../img/portfolio_one_img_black.png")no-repeat center center;
+background-size:cover;}
+
+.portfolio_one_text_wrap{width:62%;
+height:100%;
+margin-left:3%;
+float:left;}
+
+.portfolio_one_text{font-size:1.2rem;
+font-weight:800;
+margin-top:4%;}
+
+.car{width:100%;
+height:80%;
+background:url("../img/car.png")no-repeat center center;
+background-size:100%;}
+
+.car_back{background:url("../img/car_gif.gif")no-repeat center center;
+background-size:100%;}
+.car_back_leave{background:url("../img/car.png")no-repeat center center;
+background-size:100%;}
+
+/*section_end*/
+/*portfolio_page_end*/
