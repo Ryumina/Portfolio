@@ -8,17 +8,17 @@ setTimeout(function() {
 		$('.five').css({"opacity":"0"},200,"linear");
 		$('.six').css({"opacity":"0"},200,"linear");
 		$('.seven').css({"opacity":"0"},200,"linear");
-		$('.content').css({"left":"-100%"});
+		$('.content').css({"left":"100vw"});
 	},3000);
 
 setTimeout(function() {
 		$('.about_wrap').animate({"top":"12%"},1000,"easeInOutQuint");
 	},4000);
 setTimeout(function() {
-		$('.portfolio_wrap').animate({"left":"8%"},3000,"easeInOutQuint");
+		$('.portfolio_wrap').animate({"left":"8%"},2000,"easeInOutQuint");
 	},5000);
 setTimeout(function() {
-		$('.contact_wrap').animate({"right":"8%"},3000,"easeInOutQuint");
+		$('.contact_wrap').animate({"right":"8%"},2000,"easeInOutQuint");
 	},5300);
 
 //nav bar

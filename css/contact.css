@@ -1,7 +1,7 @@
 
 *{margin:0; padding:0;}
-html{font-size:13px;}
-body {color:#333; font-family: 'Montserrat'; overflow:hidden;}
+html{width:100%; height:100%; font-size:13px; overflow:hidden;}
+body {width:100%; height:100%; color:#333; font-family: 'Montserrat'; overflow:hidden;}
 ol,ul{ list-style:none;}
 a {outline:0; text-decoration:none; color:#333;}
 img {border:0; vertical-align:top;}
@@ -9,8 +9,8 @@ img {border:0; vertical-align:top;}
 
 /*contact_page*/
 
-#wrap{width:100vw;
-height:100vh;}
+#wrap{width:100%;
+height:100%;}
 
 #header_wrap{width:100%;
 height:65px;
@@ -142,12 +142,13 @@ position:relative;
 left:-100vw;}
 
 #contact_page{width:70%;
-height:100vh;
-padding:5% 0;
+height:90vh;
+padding:5vh 0;
 margin:0 auto;}
 
 .title_wrap{width:100%;
 height:15%;
+padding-top:5%;
 text-align:center;}
 
 .s_title{width:100%;
@@ -162,8 +163,8 @@ font-weight:800;
 padding:1% 0;}
 
 .contact_content{width:100%;
-height:60%;
-padding:1% 0;}
+height:70%;
+padding:3% 0;}
 
 .contact_content::after{content:" ";
 display:block;
@@ -208,6 +209,140 @@ font-weight:500;
 text-align:center;
 position:relative;
 bottom:-108%;}
-/*section_end*/
 
+/*section_end*/
 /*contact_page_end*/
+
+
+/*반응형*/
+
+@media only screen and (min-width:1601px) {
+	
+	.title_wrap{height:13%;}
+
+	.s_title{font-size:1.2rem;}
+
+	.b_title{font-size:3.3rem;}
+
+	.about_content_text{font-size:1.5rem;}
+
+}
+
+@media only screen and (max-width:1300px) and (min-width:1001px) {
+
+	#contact_page{width:85%;}
+
+	.title_wrap{height:13%;}
+
+	.contact_content li{width:31%;
+	margin-left:3.5%;}
+
+}
+
+@media only screen and (max-width:1000px) and (min-width:801px) {
+
+	#contact_page{width:85%;}
+
+	#nav_wrap{width:7%;}
+
+	.title_wrap{height:13%;
+	margin-top:1%;}
+
+	.contact_content li{width:32%;
+	margin-left:2%;}
+}
+
+@media only screen and (max-width:800px) and (min-width:401px) {
+
+	#contact_page{width:95%;}
+
+	#nav_wrap{width:100%;
+	height:100vh;
+	right:0;
+	background:#FFDE1D;}
+
+	nav li{width:80%;
+	margin:0 auto;
+	margin-top:10%;
+	box-shadow:0px 0px 0px 0px #b69e15;}
+
+	nav p{margin-top:3%;}
+
+	.first{margin-top:13%;}
+
+	nav li:hover{box-shadow:3px 3px 5px 1px #b69e15;}
+
+	.title_wrap{height:13%;
+	margin-top:3%;}
+
+	.s_title{font-size:1rem;}
+
+	.b_title{font-size:2.5rem;}
+
+	.contact_content li{width:32%;
+	margin-left:2%;}
+
+	.contact_content_text{font-size:1rem;}
+}
+
+@media only screen and (max-width:400px) {
+
+	#logo a{font-size:1.5rem;}
+
+	#contact_page{width:95%;}
+
+	#nav_wrap{width:100%;
+	height:100vh;
+	right:0;
+	background:#FFDE1D;}
+
+	nav li{width:80%;
+	margin:0 auto;
+	margin-top:10%;
+	box-shadow:0px 0px 0px 0px #b69e15;}
+
+	.first{margin-top:20%;}
+
+	nav li:hover{box-shadow:3px 3px 5px 1px #b69e15;}
+
+	nav p{margin-top:3%;}
+
+	.title_wrap{margin-top:5%;
+	height:15%;}
+
+	.s_title{font-size:0.8rem;}
+
+	.b_title{font-size:2rem;
+	padding-top:3%;}
+
+	.contact_content li{width:32%;
+	margin-left:2%;}
+
+	.contact_content_text{font-size:0.8rem;}
+
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3),
+only screen and (min--moz-device-pixel-ratio: 3),
+only screen and (-o-device-pixel-ratio: 3), 
+only screen and (min-device-pixel-ratio: 3) {
+
+	#logo a{font-size:1.5rem;}
+
+	#nav_wrap{width:100%;
+	height:100%;
+	right:0;
+	background:#FFDE1D;}
+
+	nav li{width:80%;
+	margin:0 auto;
+	margin-top:10%;
+	box-shadow:0px 0px 0px 0px #b69e15;}
+
+	.first{margin-top:20%;}
+
+	nav li:hover{box-shadow:3px 3px 5px 1px #b69e15;}
+
+	nav p{margin-top:3%;}
+
+}
